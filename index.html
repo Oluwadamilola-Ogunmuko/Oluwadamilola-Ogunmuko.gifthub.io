@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- EDIT: Replace with your name and field for search results -->
-<title>[Your Name] | Scholar &amp; Researcher</title>
-<meta name="description" content="[One-line description of your research and teaching.]">
+<title>Oluwadamilola Ogunmuko | African Cultural Studies</title>
+<meta name="description" content="PhD Candidate in African Cultural Studies at the University of Wisconsin-Madison, working at the intersection of migration, surveillance, and identity.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +23,6 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
   body {
@@ -40,7 +38,6 @@
 
   ::selection { background: var(--accent); color: var(--bg); }
 
-  /* Navigation */
   nav.topnav {
     position: sticky;
     top: 0;
@@ -82,7 +79,6 @@
   }
   nav.topnav a:hover { color: var(--accent); }
 
-  /* Layout */
   main { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
 
   section {
@@ -115,20 +111,12 @@
     font-weight: 350;
   }
 
-  h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    font-variation-settings: "opsz" 36;
-  }
-
   p { margin-bottom: 1.2rem; max-width: 70ch; }
   p:last-child { margin-bottom: 0; }
 
   a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
   a:hover { color: var(--accent-soft); }
 
-  /* Hero */
   .hero {
     padding: 7rem 0 6rem;
     border-bottom: 1px solid var(--rule);
@@ -151,17 +139,10 @@
     color: var(--accent);
     font-weight: 400;
   }
-  .hero .tagline {
-    font-size: 1.25rem;
-    color: var(--ink-soft);
-    margin-bottom: 2rem;
-    font-style: italic;
-    max-width: 60ch;
-  }
   .hero .meta {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
     font-size: 0.95rem;
     color: var(--ink-soft);
   }
@@ -175,20 +156,10 @@
     aspect-ratio: 4/5;
     background: var(--bg-alt);
     border: 1px solid var(--rule);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--ink-soft);
-    font-size: 0.85rem;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
     overflow: hidden;
   }
   .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .portrait .placeholder { font-style: italic; opacity: 0.6; }
 
-  /* About */
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -213,20 +184,6 @@
     font-size: 0.95rem;
   }
 
-  /* Research */
-  .research-areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
-    margin-top: 1rem;
-  }
-  .research-areas article {
-    border-top: 2px solid var(--ink);
-    padding-top: 1.25rem;
-  }
-  .research-areas h3 { margin-bottom: 0.75rem; }
-
-  /* Publications */
   .pub-list { list-style: none; counter-reset: pub; }
   .pub-list li {
     counter-increment: pub;
@@ -263,36 +220,6 @@
   }
   .pub-list .pub-meta { font-size: 0.95rem; color: var(--ink-soft); font-style: italic; }
 
-  /* Teaching */
-  .courses {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-  .course {
-    background: var(--bg-alt);
-    padding: 1.75rem;
-    border-left: 3px solid var(--accent);
-  }
-  .course .course-code {
-    font-family: 'Fraunces', serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.15em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-  }
-  .course h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
-  .course p { font-size: 0.95rem; margin-bottom: 0; }
-
-  /* Contact */
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin-top: 2rem;
-  }
   .contact-block dt {
     font-family: 'Fraunces', serif;
     font-size: 0.72rem;
@@ -304,25 +231,9 @@
   }
   .contact-block dd {
     margin-bottom: 1.5rem;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
   }
 
-  .cv-button {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem 2rem;
-    background: var(--ink);
-    color: var(--bg);
-    text-decoration: none;
-    font-family: 'Fraunces', serif;
-    font-size: 0.85rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    transition: background 0.2s;
-  }
-  .cv-button:hover { background: var(--accent); color: var(--bg); }
-
-  /* Footer */
   footer {
     border-top: 1px solid var(--rule);
     padding: 3rem 2rem;
@@ -333,7 +244,6 @@
     margin: 0 auto;
   }
 
-  /* Mobile */
   @media (max-width: 800px) {
     nav.topnav .inner { flex-direction: column; align-items: flex-start; gap: 0.75rem; padding: 1rem 1.5rem; }
     nav.topnav ul { gap: 1.25rem; }
@@ -342,7 +252,6 @@
     .hero { padding: 4rem 0; }
     .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
     .pub-list li { padding-left: 3rem; }
   }
 </style>
@@ -351,13 +260,10 @@
 
 <nav class="topnav">
   <div class="inner">
-    <!-- EDIT: Your name -->
-    <div class="brand">[Your Name]</div>
+    <div class="brand">Oluwadamilola Ogunmuko</div>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#teaching">Teaching</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -365,171 +271,69 @@
 
 <main>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="hero-grid">
       <div>
-        <!-- EDIT: Your name. Use <em> on a word or your last name for editorial emphasis. -->
-        <h1>[First] <em>[Last]</em></h1>
-        <!-- EDIT: A one-line scholarly identification. Field, methods, or central question. -->
-        <p class="tagline">[One sentence describing what you study and how. Keep it concrete and specific.]</p>
+        <h1>Oluwadamilola <em>Ogunmuko</em></h1>
         <div class="meta">
-          <!-- EDIT: Your current institutional affiliation, position, and any relevant info. -->
-          <span>[PhD Candidate, Department, University]</span>
-          <span>[City, Country]</span>
+          <span>PhD Candidate, African Cultural Studies, University of Wisconsin-Madison</span>
+          <span>Madison, United States of America</span>
         </div>
       </div>
       <div class="portrait">
-        <!-- EDIT: Replace the placeholder div with: <img src="portrait.jpg" alt="Photograph of [Your Name]"> -->
-        <span class="placeholder">[Add a portrait image named portrait.jpg in the same folder, then replace this placeholder with the img tag noted in the HTML comment.]</span>
+        <img src="portrait.jpg" alt="Photograph of Oluwadamilola Ogunmuko">
       </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section id="about">
     <p class="section-label">About</p>
     <h2>Biography</h2>
     <div class="about-grid">
       <div class="col-meta">
         <dl>
-          <!-- EDIT: Education entries. Add or remove dt/dd pairs. -->
           <dt>PhD</dt>
-          <dd>[Field], [University], [expected year]</dd>
+          <dd>African Cultural Studies, University of Wisconsin-Madison, May 2027</dd>
           <dt>MA</dt>
-          <dd>[Field], [University], [year]</dd>
+          <dd>English Literature, University of Lagos, Akoka, 2019</dd>
           <dt>BA</dt>
-          <dd>[Field], [University], [year]</dd>
+          <dd>English Language, Obafemi Awolowo University, Ile-Ife, 2015</dd>
           <dt>Fields</dt>
-          <dd>[Primary field]; [secondary field]; [tertiary field]</dd>
-          <dt>Languages</dt>
-          <dd>[Languages and proficiency levels]</dd>
+          <dd>African Studies; global Black studies; Migration; Surveillance Studies; Cultural Studies; Film Studies; Literary Studies</dd>
         </dl>
       </div>
       <div class="col-bio">
-        <!-- EDIT: Write your bio here. Two to four paragraphs is standard for the job market. -->
-        <p>[Paragraph one: Open with your scholarly identity in one sentence. State what you research, where, and what your overarching question is. Aim for clarity over cleverness.]</p>
-        <p>[Paragraph two: Describe your current project. Name the dissertation or book project, its contribution, and the methods or archives you work with.]</p>
-        <p>[Paragraph three: Note publications, fellowships, or recognitions if relevant. Search committees scan this section, so place the strongest credentials early.]</p>
-        <p>[Paragraph four (optional): Add teaching commitments, public scholarship, or a brief personal note that contextualizes your trajectory.]</p>
+        <p>I am a cultural, Africana, global Black, and literary studies scholar working at the intersection of migration, surveillance, and identity. I am completing my PhD at the Department of African Cultural Studies at the University of Wisconsin-Madison. I adopt a multidisciplinary research method by combining ethnographic, cultural, and literary sources. My dissertation, <em>Mobility Privilege: Global Citizens and Border Politics</em>, focuses on the representation of African mobilities, migration, and surveillance in cultural productions like films, music, and novels.</p>
+        <p>As an educator positioned at the intersection of African and global Black studies, my teaching philosophy focuses on helping students understand concepts, actively participate in classroom discussion, and take ownership of their learning. I have taught courses on African migration, African storytellers, and African Cultural Expression. I believe students should be invested participants and translate their learning experience into practical skills they can use beyond the classroom. More broadly, I engage with intersectional pedagogy and I strongly believe that education develops the ability to question, think critically, and act with autonomy.</p>
       </div>
     </div>
   </section>
 
-  <!-- RESEARCH -->
-  <section id="research">
-    <p class="section-label">Research</p>
-    <h2>Current &amp; ongoing projects</h2>
-    <div class="research-areas">
-      <!-- EDIT: Each <article> is one research area or project. Add or remove as needed. -->
-      <article>
-        <h3>[Project or area title]</h3>
-        <p>[Two to four sentences on this project: the question, the corpus or archive, the contribution. Avoid jargon density. A reader outside your field should understand the stakes.]</p>
-      </article>
-      <article>
-        <h3>[Project or area title]</h3>
-        <p>[Two to four sentences. Be specific about what is new in your approach or argument.]</p>
-      </article>
-      <article>
-        <h3>[Project or area title]</h3>
-        <p>[Two to four sentences. If this is a future project, say so directly.]</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- PUBLICATIONS -->
   <section id="publications">
     <p class="section-label">Publications</p>
     <h2>Selected writing</h2>
     <ol class="pub-list">
-      <!-- EDIT: One <li> per publication. Use the structure shown. Group by type if you prefer (peer-reviewed articles first, then chapters, then public scholarship). -->
       <li>
         <div class="pub-type">Peer-reviewed article</div>
-        <div class="pub-title">[Title of article]</div>
-        <div class="pub-meta">[Journal Name] [vol], no. [issue] ([year]): [pages]. [DOI or link if available.]</div>
-      </li>
-      <li>
-        <div class="pub-type">Book chapter</div>
-        <div class="pub-title">[Title of chapter]</div>
-        <div class="pub-meta">In [Book Title], edited by [Editor], [pages]. [Publisher, year].</div>
-      </li>
-      <li>
-        <div class="pub-type">Under review</div>
-        <div class="pub-title">[Title]</div>
-        <div class="pub-meta">[Journal name, status]. [Manuscript available on request.]</div>
-      </li>
-      <li>
-        <div class="pub-type">Public scholarship</div>
-        <div class="pub-title">[Title of essay or piece]</div>
-        <div class="pub-meta">[Venue], [Date]. <a href="#">[Link]</a></div>
+        <div class="pub-title">&ldquo;Spectral Cinema: Return, Disembodiment and Haunting Narratives in Selected Works of Mati Diop&rdquo;</div>
+        <div class="pub-meta"><em>Journal of African Cinemas</em>, forthcoming.</div>
       </li>
     </ol>
   </section>
 
-  <!-- TEACHING -->
-  <section id="teaching">
-    <p class="section-label">Teaching</p>
-    <h2>Courses</h2>
-    <!-- EDIT: Brief teaching statement. One paragraph. -->
-    <p>[One paragraph describing your teaching approach. State the kinds of courses you have taught or designed, the populations you have worked with, and one concrete pedagogical commitment. A full teaching statement belongs in your job materials, not on the website.]</p>
-    <div class="courses">
-      <!-- EDIT: Each .course is one course you have taught or designed. -->
-      <div class="course">
-        <div class="course-code">[Dept 000] · [Term Year]</div>
-        <h3>[Course title]</h3>
-        <p>[One sentence on the course: theme, level, and what students did.]</p>
-      </div>
-      <div class="course">
-        <div class="course-code">[Dept 000] · [Term Year]</div>
-        <h3>[Course title]</h3>
-        <p>[One sentence summary.]</p>
-      </div>
-      <div class="course">
-        <div class="course-code">[Course in development]</div>
-        <h3>[Proposed course title]</h3>
-        <p>[One sentence on a course you are prepared to teach. Useful for signaling range.]</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
   <section id="contact">
     <p class="section-label">Contact</p>
     <h2>Get in touch</h2>
-    <div class="contact-grid">
-      <dl class="contact-block">
-        <!-- EDIT: Replace with your real email, address, and links. -->
-        <dt>Email</dt>
-        <dd><a href="mailto:[your.email@university.edu]">[your.email@university.edu]</a></dd>
-        <dt>Office</dt>
-        <dd>[Building, Room, Department, University]</dd>
-        <dt>Mail</dt>
-        <dd>[Department, University, Address]</dd>
-      </dl>
-      <dl class="contact-block">
-        <dt>Scholarly profiles</dt>
-        <dd>
-          <!-- EDIT: Add or remove profile links. Delete any you do not use. -->
-          <a href="#">ORCID</a> &nbsp;·&nbsp;
-          <a href="#">Google Scholar</a> &nbsp;·&nbsp;
-          <a href="#">Academia.edu</a>
-        </dd>
-        <dt>Other</dt>
-        <dd>
-          <a href="#">LinkedIn</a> &nbsp;·&nbsp;
-          <a href="#">[Other]</a>
-        </dd>
-      </dl>
-    </div>
-    <!-- EDIT: Save your CV as cv.pdf in the same folder as this file. -->
-    <a href="cv.pdf" class="cv-button" download>Download CV (PDF)</a>
+    <dl class="contact-block">
+      <dt>Email</dt>
+      <dd><a href="mailto:damiogunmuko@gmail.com">damiogunmuko@gmail.com</a></dd>
+    </dl>
   </section>
 
 </main>
 
 <footer>
-  <!-- EDIT: Update the year and your name. -->
-  <p>© 2026 [Your Name]. Last updated [Month Year].</p>
+  <p>&copy; 2026 Oluwadamilola Ogunmuko. Last updated April 2026.</p>
 </footer>
 
 </body>
