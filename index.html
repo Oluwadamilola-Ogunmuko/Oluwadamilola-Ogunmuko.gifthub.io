@@ -220,6 +220,21 @@
   }
   .pub-list .pub-meta { font-size: 0.95rem; color: var(--ink-soft); font-style: italic; }
 
+  .pub-category {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-top: 3.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--ink);
+  }
+  .pub-category:first-of-type { margin-top: 1rem; }
+  .pub-category + .pub-list li:first-child { border-top: none; }
+
   .contact-block dt {
     font-family: 'Fraunces', serif;
     font-size: 0.72rem;
@@ -312,11 +327,23 @@
   <section id="publications">
     <p class="section-label">Publications</p>
     <h2>Selected writing</h2>
+    <h3 class="pub-category">Peer-reviewed Articles</h3>
     <ol class="pub-list">
       <li>
-        <div class="pub-type">Peer-reviewed article</div>
         <div class="pub-title">&ldquo;Spectral Cinema: Return, Disembodiment and Haunting Narratives in Selected Works of Mati Diop&rdquo;</div>
         <div class="pub-meta"><em>Journal of African Cinemas</em>, forthcoming.</div>
+      </li>
+    </ol>
+
+    <h3 class="pub-category">Book Reviews</h3>
+    <ol class="pub-list">
+      <li>
+        <div class="pub-title">&ldquo;The Roars of the Suppressed: A Review of Abi Dar&eacute;&rsquo;s <em>And So I Roar</em>&rdquo;</div>
+        <div class="pub-meta"><em>Brittle Paper</em>, February 2025. <a href="https://brittlepaper.com/2025/02/the-roars-of-the-suppressed-a-review-of-abi-dares-and-so-i-roar-oluwadamilola-ogunmuko-review/">Read online</a></div>
+      </li>
+      <li>
+        <div class="pub-title">Review of <em>Writing on the Soil: Land and Landscape in Literature from Eastern and Southern Africa</em>, by Ng&rsquo;ang&rsquo;a Wahu-Muchiri</div>
+        <div class="pub-meta"><em>Journal of the African Literature Association</em>, 2023. <a href="https://doi.org/10.1080/21674736.2023.2281872">https://doi.org/10.1080/21674736.2023.2281872</a></div>
       </li>
     </ol>
   </section>
